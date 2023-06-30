@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/aliceblue"
+    tools:ignore="MissingDefaultResource">
+
+    <!--<include layout="@layout/thetop" />android:layout_marginTop="61dp"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/shebeilayout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlelayout">
+
+            <ImageView
+                android:id="@+id/shebei"
+                android:layout_width="151dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <EditText
+                android:id="@+id/shebeivalue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/data1layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/titlelayout">
+
+            <TextView
+                android:id="@+id/data1title"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="时间:"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <EditText
+                android:id="@+id/localtimevalue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wendu1"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlelayout">
+
+            <TextView
+                android:id="@+id/wendu"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="温度:"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <EditText
+                android:id="@+id/wenduvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/shidu1"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlelayout">
+
+            <TextView
+                android:id="@+id/shidu"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="湿度:"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <EditText
+                android:id="@+id/shiduvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/CO21"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlelayout">
+
+            <TextView
+                android:id="@+id/CO2"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="CO2浓度:"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <EditText
+                android:id="@+id/CO2value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jchongxi1"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlelayout">
+
+            <TextView
+                android:id="@+id/chongxi"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="氨气浓度:"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <EditText
+                android:id="@+id/NH3value"
+                android:layout_width="109dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="textPersonName" />
+
+            <Switch
+                android:id="@+id/chongxiswitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:text="冲洗" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/siliao1"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlelayout">
+
+            <TextView
+                android:id="@+id/siliao"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="饲料:"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <EditText
+                android:id="@+id/siliaovalue"
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="textPersonName" />
+
+            <Switch
+                android:id="@+id/siliaoswitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:text="投饲料" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/yinyongshui1"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlelayout">
+
+            <TextView
+                android:id="@+id/yinyongshui"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="饮用水:"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <EditText
+                android:id="@+id/yinyongshuivalue"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="textPersonName" />
+
+            <Switch
+                android:id="@+id/yinyongshuiswitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:text="加水" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/cate0"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="设备控制模式" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/cate1"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="" />
+                <RadioButton
+                    android:id="@+id/ca1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="自动模式" />
+                <RadioButton
+                    android:id="@+id/ca2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="手动模式" />
+            <TextView
+                android:id="@+id/cate2"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dataanalysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="数据可视化分析" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+    </LinearLayout>
+
+</RelativeLayout>
